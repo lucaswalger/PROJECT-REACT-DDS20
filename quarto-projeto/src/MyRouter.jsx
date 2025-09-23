@@ -9,6 +9,9 @@ import Sobre from "./Pages/Sobre";
 import PaginaErro from "./Pages/PaginaErro";
 import RotasProtegidas from "./Pages/RotasProtegidas";
 import ResetarSenha from "./Pages/ResetarSenha";
+import InfoCard from "./components/InfoCard";
+import MostrarCoisas from "./Pages/MostrarCoisas";
+import MostrarCantores from "./Pages/MostrarCantores";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +45,9 @@ const router = createBrowserRouter([
       { path: "/home", element: <Home /> },
       { path: "/cadastro", element: <Cadastro /> },
       { path: "/sobre", element: <Sobre /> },
+      {path: "infocard/:id", element: <InfoCard /> },
+      {path: "mostrar", element: <MostrarCoisas /> },
+      {path: "mostrarCantores", element: <MostrarCantores /> }
     ],
   },
 ]);
